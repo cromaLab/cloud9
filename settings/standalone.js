@@ -1,9 +1,9 @@
 module.exports = function(manifest, installPath) {
     if (!manifest) {
         manifest = require(__dirname + "/../package.json");
-        manifest.revision = 
-            manifest.revision ||
-            require("c9/git").getHeadRevisionSync(__dirname + "/..");
+        //manifest.revision = 
+            //manifest.revision ||
+            //require("c9/git").getHeadRevisionSync(__dirname + "/..");
     }
     
     var path = require("path");
